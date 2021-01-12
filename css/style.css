@@ -53,17 +53,20 @@ section {
   color: #562eff;
 }
 .top-players,
-.blogs {
+.blogs,
+.courses {
   display: grid;
   grid-gap: 20px;
   place-items: center;
 }
-.top-players {
+.top-players,
+.courses {
   grid-template-columns: repeat(3, 1fr);
 }
 .blogs {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .top-players img {
   width: 50px;
   margin-right: 20px;
@@ -98,8 +101,21 @@ hr {
   font-size: 15px;
   font-weight: 590;
 }
+.filled {
+  color: goldenrod;
+}
+.unfilled {
+  color: gray;
+}
+.course-info {
+  display: flex;
+}
+.courses img {
+  width: 100%;
+}
 @media (max-width: 992px) {
-  .top-players {
+  .top-players,
+  .courses {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -109,7 +125,8 @@ hr {
   }
 }
 @media (max-width: 668px) {
-  .top-players {
+  .top-players,
+  .courses {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
